@@ -1,0 +1,6 @@
+# Files ignored by github
+# For latex to pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
