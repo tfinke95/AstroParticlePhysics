@@ -98,26 +98,34 @@ with
 \begin{align}
 \rho_{\rm e}(r,x)=\frac{N_{\rm e}(x)C_1(s)}{r_{\rm s}^{2}}\left(\frac{r}{r_{\rm s}}\right)^{s-2}\left(\frac{r_{\rm s}+r}{r_{\rm s}}\right)^{s-4.5}
 \end{align}
-one obtains that
+one obtains that 
 \begin{align}
-C_1(s)=\frac{\Gamma(4.5-s)}{2\pi \Gamma(s)\Gamma(4.5-2s)}
+C_1(s)=\frac{1}{2\pi\int\frac{r}{r_{s}^{2}}\left(\frac{r}{r_{\rm s}}\right)^{s-2}\left(\frac{r_{\rm s}+r}{r_{\rm s}}\right)^{s-4.5}}
 \end{align}
-so that then $C_1(s=1.25)=0.45$.
+For $s=1.25$ we get that $C_1=0.447$.
 
 \paragraph{b)}
 According to the lecture notes, the lateral distribution of the particle density for hadronic showers is given by
 \begin{align}
 \rho(r,x)=\frac{N(x)C_1(s)}{r_{\rm s}^{2}}\left(\frac{r}{r_{\rm s}}\right)^{s-2}\left(\frac{r_{\rm s}+r}{r_{\rm s}}\right)^{s-4.5}\left(1+C_2\left(\frac{r}{r_{\rm s}}\right)^{\delta}\right)
 \end{align}
-Using $\delta=1$ it becomes
+Using $\delta=1$ and $C_2=0.088$ analogously to exercise a) we obtain
 \begin{align}
-\nonumber
-\rho(r,x) & =\frac{N(x)C_1(s)}{r_{\rm s}^{2}}\left(\frac{r}{r_{\rm s}}\right)^{s-2}\left(\frac{r_{\rm s}+r}{r_{\rm s}}\right)^{s-4.5}+\\ &\hspace{0.4 cm}+\frac{N(x)C_1(s)C_2}{r_{\rm s}^{2}}\left(\frac{r}{r_{\rm s}}\right)^{s-1}\left(\frac{r_{\rm s}+r}{r_{\rm s}}\right)^{s-4.5}
+C_1(s)=\frac{1}{2\pi\int\frac{r}{r_{s}^{2}}\left(\frac{r}{r_{\rm s}}\right)^{s-2}\left(\frac{r_{\rm s}+r}{r_{\rm s}}\right)^{s-4.5}\left(1+C_2\frac{r}{r_{\rm s}}\right)}
 \end{align}
-and, analogously to exercise a), we obtain
-\begin{align}
-C_1(s)=\frac{\Gamma(4.5-s)}{2\pi \Gamma(s)\Gamma(4.5-2s)}+C_2??
-\end{align} 
+so that, for $s=1.25$, $C_1=0.403$.
+
+\paragraph{c)}
+The following plot displays the lateral distribution for EM (black line) and hadronic (blue line) cascades for $N=10^6$. To define $r_s$ we used the definition (5.173) of the lecture notes to obtain $r_s\approx 8.5$ g cm$^{-2}$ and than we divided it by the air density at sea level ($\rho_0=1.3$ g cm$^{-3}$) to obtain a Moliere radius of 6,5 cm.
+\begin{figure}[h]
+\centering
+\includegraphics[height=6 cm, width= 8 cm]{plot_ex_2c.pdf}
+\label{plot_ex_2c}
+\end{figure}
+\\* It is possible to observe a deviation for large distances from the core, where the density of EM cascades decreases faster than the density of hadronic cascades. This behavior could be explained with the fact that "hadronic decay particles typically carry larger transversal momenta than EM particles" so that "the transversal extension of hadronic cascades is larger" (Lecture notes p. 109) and with it also the density for very large distances from the shower core. 
+
+\paragraph{d)}
+As possible to observe in Fig. \ref{plot_ex_2c}, a density of 1 particle per m$^2$ is reached at a distance from the shower core of $\approx$ 165 m.
 
 \subsection*{Exercise 4}
 \paragraph{a)}
