@@ -1,6 +1,6 @@
 Zum Festhalten, wer zurzeit woran arbeitet
 1: Matteo - alles ausser f)
 2: Matteo - fertig
-3: Matteo - Ausstehend
+3: Matteo - fertig
 4: Thorben - Ausstehend
 5: Thorben - Ausstehend
