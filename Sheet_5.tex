@@ -163,9 +163,33 @@ In the last step it is used that the speed of light in medium is given by $c' = 
 For relativistic particles - $\beta \approx 1$ - the opening angle for water is $41.30^\circ$ and for $1.38^\circ0$.
 
 \paragraph{c)}
-To induce Cherenkov light the particles' speed needs to be higher than the speed of light in the medium. For water that is $c' = c/n < \beta c \rightarrow 1/n < \beta$.
-From relativistic kinematics one gets in natural units ($c=1$)
+To induce Cherenkov light the particles' speed needs to be higher than the speed of light in the medium. For water that is $c' = c/n < \beta c \rightarrow 1/n = 0.751 < \beta$.
+From relativistic kinematics and by inserting $\beta > 0.751$ one gets in natural units ($c=1$)
 \begin{align*}
-E_{kin} = E - E_0 = (\gamma - 1) m_0
+E_{kin} = K = E - E_0 = (\gamma - 1) m_0 > 0.514 \cdot m_0.
 \end{align*}
+Now inserting the restmasses of the particles one gets $K_\mu > 54.414\ MeV$, $K_p > 483.210\ MeV$, $K_n > 483.876\ MeV$, $K_e > 0.263\ MeV$.
+
+\paragraph{d)}
+\begin{align*}
+\frac{d^2N}{dxd\lambda} &= \frac{2\pi\alpha}{\lambda^2}\left(1 - \frac{1}{\beta^2n^2}\right)\\
+\frac{dN}{dx} &= \int_{300\ nm}^{550\ nm} \frac{2\pi\alpha}{\lambda^2}\left(1 - \frac{1}{\beta^2n^2}\right) d\lambda \\
+&= \frac{2\pi\alpha}{660\ nm}\left(1 - \frac{1}{\beta^2n^2}\right)\\
+&= 3.026 \cdot 10^{-5}\ nm^{-1} &\text{for water}\\
+&= 4.029 \cdot 10^{-8}\ nm^{-1} &\text{for air}\\
+\rightarrow N &= 3.026 \cdot 10^4 &\text{for water}\\
+N &= 4.029 \cdot 10^1 \approx 40 &\text{for air}\\
+\end{align*}
+Integrating the $1/\lambda^2$ term from $300\ nm$ to $550\ nm$ gives the factor $1 / (660\ nm)$. Again it is assumed $\beta \approx 1$. $\alpha = 1/137$ is used in this calculation.
+
+\paragraph{e)}
+The energy loss is given by the number of particles multiplied by their energy $E=hc/\lambda$. On gets
+\begin{align*}
+\frac{d^2E_{loss}}{dxd\lambda} &= \frac{2 \pi \alpha h c}{\lambda^3} \left(1 - \frac{1}{\beta^2n^2}\right)\\
+\frac{dE_{loss}}{dx} &= \int_{300\ nm}^{550\ nm} \frac{2 \pi \alpha h c}{\lambda^3} \left(1 - \frac{1}{\beta^2n^2}\right) d\lambda \\
+\frac{dE_{loss}}{dx} &= \frac{34 \pi \alpha h c}{4356000\ nm^2} \left(1 - \frac{1}{\beta^2n^2}\right)\\
+&= 9.665 \cdot 10^{1} \frac{eV}{m} &\text{for water}\\
+&= 1.287 \cdot 10^{-1} \frac{eV}{m} &\text{for air}\\
+\end{align*}
+Again $\beta \approx 1$ and $\alpha = 1 / 137$ is used.
 \end{document}
