@@ -7,6 +7,43 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \begin{document}
+\section*{Exercise 2}
+\paragraph{a)}
+The energy of the muon in the rest frame of the charged pion is given by
+\begin{align*}
+E_\mu = E_\pi - E_\nu = m_\pi - p_\nu
+\end{align*}
+Since the energy is split between the two daughter particles. The last part occurs, since the pion is at rest (only mass left) and the neutrino is supposed to be massless (only momentum left).\\
+Momentum conservation requires then $\vec{p}_\mu = -\vec{p}_\nu$. Setting $p^2 = p_\mu^2 = p_\nu^2$ one gets $\sqrt{m_\mu^2+p^2} = m_\pi - p$.
+Solving for $p$:
+\begin{align*}
+m_\mu^2 + p^2 &= m_\pi^2 + p^2 - 2 m_\pi p\\
+p &= \frac{m_\pi^2 - m_\mu^2}{2m_\pi}
+\end{align*}
+\paragraph{b)}
+Lorentz-boost with velocity $\beta$ of a 4-vector is given as:
+\begin{align*}
+\begin{pmatrix}
+E \\ p_x \\ p_y \\ p_z
+\end{pmatrix}
+\rightarrow 
+\begin{pmatrix}
+\gamma ( E - \beta p_x) \\ \gamma (p_x - \beta E) \\ p_y \\ p_z
+\end{pmatrix}
+\end{align*}
+for a boost in x-direction (which is arbitrary in this case).
+If $p_x$ of the muon is in the same direction as the boost ($p_x > 0$) one keeps the minus sign and thus the energy becomes minimal. However, if the momentum of the muon is into the other direction ($p_x < 0$), the energy will become maximal. 
+\paragraph{c)}
+The muon rest frame energy is given by its mass $m_\mu$. The boost into the lab frame then gives an energy of $E_\mu' = \gamma m_\mu$, since $p_x$ in the above equation is zero. From this point it is impossible to get a minimum or maximum energy.\\
+If one boosts from the rest frame of the pion to the lab frame one gets
+\begin{align*}
+E_\mu &= \gamma ( (m_\pi - |p|) - \beta p) \\
+E_\mu^{max} &= \gamma ( (m_\pi - p) + \beta p) = \gamma (m_\pi + p (\beta - 1)\\
+E_\mu^{min} &= \gamma ( (m_\pi - p) - \beta p) = \gamma (m_\pi - p (\beta + 1)
+\end{align*}
+Here $p$ denotes the momentum of the muon in the rest frame of the decaying pion. In the maximum case it is negative (opposite direction with respect to the boost direction). In the minimum case it is positive (same direction with respect to the boost direction)
+
+
 \section*{Exercise 4}
 \paragraph{a)}
 "The isotope $^{10}Be$ predominately measures the confinement time for C, N and O." \footnote{\url{http://www.srl.caltech.edu/ACE/CRIS_SIS/cris-ssr-paper.pdf}}
