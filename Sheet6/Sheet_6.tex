@@ -1,0 +1,41 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\begin{document}
+\section*{Exercise 4}
+\paragraph{a)}
+"The isotope $^{10}Be$ predominately measures the confinement time for C, N and O." \footnote{\url{http://www.srl.caltech.edu/ACE/CRIS_SIS/cris-ssr-paper.pdf}}
+\paragraph{b)}
+Alternatives for $^{10}Be$ are $^{26}Al$, $^{36}Cl$, $^{14}C$ and $^{54}Mn$.
+\paragraph{c)}
+The lifetime of $^{14}C$ is short, compared to the others.
+It is approximately 5730 years. That is why it can only be observed, if it is produced by fragmentation of heavier nuclei in the neighbourhood of the solar system.\\
+For $^{54}Mn$ the constraint is that the decay time has not been measured directly.
+\paragraph{d)}
+\begin{align*}
+^{10}Be/^{9}Be &= 0.12\ now\\
+^{10}Be/^{9}Be &= 0.48\ beginning\\
+\lambda_{esc} &= \frac{26.7\cdot \beta \ g\ cm^{-2}}{(\beta R / 1GV)^{0.58}+(\beta R / 1.4GV)^{-1.4}}\\
+\tau_{esc} &= \lambda_{esc} / \rho_{ISM} \beta c \\
+\tau_{^{10}Be} &= 2.3 \cdot 10^6 yr\\
+\epsilon &= \rho_{ISM} / \rho_{CRIS} = ???
+\end{align*}
+\paragraph{e)}
+\begin{align*}
+\tau_{esc}^{phys} &= \lambda_{esc}/\rho_{CRIS} \beta c = \tau_{esc} \cdot \rho_{ISM} / \rho_{CRIS} = \tau_{esc} \cdot \epsilon
+\end{align*}
+For looking at the both ratios given in exercise d) and then assuming an exponential decay of $^{10}Be \rightarrow ^{10}Be(t) = ^{10}Be_0 \cdot \exp(-t/\tau)$ one can derive
+\begin{align*}
+0.12 &= \frac{^{10}Be \exp(-t/\tau)}{^{9}Be + (1 - \exp(-t/\tau)) ^{10}Be} \\
+&= \frac{0.48 \exp(-t/\tau)}{1 + (1 - \exp(-t/\tau)) 0.48}
+\end{align*}
+In the last step the initial ratio $^{10}Be/^{9}Be=0.48$ is used. 
+Solving for the time $t$ using $\tau=2.3 \cdot 10^6\ yr$ one gets $t=2.546 \cdot 10^6\ yr$
+\paragraph{f)}
+For increasing energy I would expect shorter escape times. For higher energies the bending radii from magnetic fields become larger and a particle leaving the galactic disk with large energy has a higher probability to not being bent strong enough to re-enter the disk.
+\end{document}
