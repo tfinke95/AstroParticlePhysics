@@ -29,9 +29,41 @@ In the last step the power-law for the kinetic energy flux is inserted and the e
 From the graph one can read the points $P_1 = (10 | 2\cdot 10^{-3})$ and $P_2=(10^2 | 5 \cdot 10^{-6})$. This results in $\Phi_0 = 0.8\ (cm^2\ s\ sr\ GeV)^{-1}$ and $\gamma = 2.602$.
 
 \paragraph{c)}
-Inserting into the integral in b) gives a value
+Inserting into the integral values from b) gives a value
 \begin{align*}
-\int_{E_{min}}^\infty dE_{kin}\ \frac{E_{kin}^{-\gamma+1}}{\sqrt{1-\left(\frac{E_{kin}}{m_0 c^2} + 1\right)^{-2}}} = 1.7323
+\int_{1\ GeV}^\infty dE_{kin}\ \frac{E_{kin}^{-\gamma+1}}{\sqrt{1-\left(\frac{E_{kin}}{m_0 c^2} + 1\right)^{-2}}} = 0.9182
 \end{align*}
-Resulting in $\rho_E = $
+Resulting in $\rho_{E_{kin}} = 3.0790 \cdot 10^{-10}\ \frac{GeV}{cm^3}$.
+
+\paragraph*{d)}
+C is approximately 0.1. For constant flux one finds the same integral just with $\gamma = 0$. This again results in $\rho_{E_kin} = 3.6552\ \frac{GeV}{cm^3}$.
+
+\subsection*{Exercise 4}
+\paragraph*{a)}
+The energy gain per time is given by 
+\begin{align*}
+\frac{dE}{dt} = &Collisionrate \cdot  \delta E \\
+= &\frac{\xi E}{t_{cycle}} = \frac{E}{\alpha\ t_{esc}}\\
+=> E(t) = &E_0 \cdot \exp\left(\frac{\xi}{t_{cycle}}\cdot t\right) = E_0 \cdot \exp\left(\frac{t}{\alpha\ t_{esc}}\right)
+\end{align*}
+Here $\xi$ is the relative energy gain per acceleration. $t_{cycle}$ is the time between to cycles, $\alpha$ is the spectral index and $t_{esc}$ is the escape time.
+
+\paragraph{b)}
+The acceleration time is given by
+\begin{align*}
+t_{acceleration} = \frac{t_{cycle}}{\xi} \cdot ln\left(\frac{E}{E_0}\right)
+\end{align*}
+$\xi = \frac{4}{3} \beta_V^2 = 3.7088 \cdot 10^{-8}$, $t_{cycle}$ is limited by d to $\approx 3\ a$. So one gets
+\begin{align*}
+t_{acceleration} = 1.21 \cdot 10^9\ a
+\end{align*}
+
+\paragraph{c)}
+\begin{align*}
+\frac{E(t=6\cdot 10^6\ a)}{E_0} = \exp\left(\frac{\xi}{t_{cycle}}\cdot 6\cdot 10^6\ a\right) = 1.077
+\end{align*}
+
+\paragraph{d)}
+The new energy gain is given by $\xi = 3.7088\cdot 10^{-6}$. The new cycle time $t_{cycle} \approx 3.2616 \cdot 10^6\ a$. One gets for the acceleration from $1\ GeV$ to $10^{19.5}\ eV$ a time of $2.1261 \cdot 10^{13}\ a$. \\
+For the acceleration from $10^{15}\ eV$ one gets a time of $0.1122 \cdot 10^{12}\ a$.
 \end{document}
