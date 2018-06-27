@@ -1,0 +1,37 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\subsection*{Exercise 1}
+\paragraph{a)}
+\begin{align*}
+E_{kin} &= \gamma m_0 c^2 - m_0 c^2 = m_0 c^2 (\gamma - 1) \\
+\frac{E_{kin}}{m_0 c^2} &= \frac{1}{\sqrt{1-\beta^2}} - 1 \\
+\beta &= \sqrt{1-\left(\frac{E_{kin}}{m_0 c^2} + 1\right)^{-2}}
+\end{align*}
+Now rewriting the energy density as
+\begin{align*}
+\rho_E = \rho_{E_0} + \rho_{E_{kin}}
+\end{align*}
+where $\rho_{E_0}$ is the energy density occurring from the rest mass and $\rho_{E_{kin}}$ is the kinetic energy density. Analogous to the calculation in the script one gets:
+\begin{align*}
+\rho_E &= \rho_{E_0} + \int_{E_{min}}^\infty dE_{kin}\ \frac{dn_{CR}}{dE_{kin}}E_{kin}\\
+&=\rho_{E_0} + \int_{E_{min}}^\infty dE_{kin}\ \frac{4\pi}{\beta c}\frac{d\Phi}{dE_{kin}}E_{kin}\\
+&=\rho_{E_0} + \frac{4\pi \Phi_0}{c} \int_{E_{min}}^\infty dE_{kin}\ \frac{E_{kin}^{-\gamma+1}}{\sqrt{1-\left(\frac{E_{kin}}{m_0 c^2} + 1\right)^{-2}}}\\
+\end{align*}
+In the last step the power-law for the kinetic energy flux is inserted and the expression for $\beta$ from before.
+
+\paragraph{b)}
+From the graph one can read the points $P_1 = (10 | 2\cdot 10^{-3})$ and $P_2=(10^2 | 5 \cdot 10^{-6})$. This results in $\Phi_0 = 0.8\ (cm^2\ s\ sr\ GeV)^{-1}$ and $\gamma = 2.602$.
+
+\paragraph{c)}
+Inserting into the integral in b) gives a value
+\begin{align*}
+\int_{E_{min}}^\infty dE_{kin}\ \frac{E_{kin}^{-\gamma+1}}{\sqrt{1-\left(\frac{E_{kin}}{m_0 c^2} + 1\right)^{-2}}} = 1.7323
+\end{align*}
+Resulting in $\rho_E = $
+\end{document}
