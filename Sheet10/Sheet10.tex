@@ -1,0 +1,35 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\subsection*{Exercise 2}
+The Hillas criterion reads:
+\begin{align*}
+\frac{E_{max, obs}}{10^{20}\ eV} \lesssim \Gamma \cdot Z \cdot \frac{L_{source}}{pc} \cdot \frac{B}{G}
+\end{align*}
+For the LHC $B$ goes up to $7.7\ T = 7.7\cdot 10^4\ G$. The circumference of the LHC is $\approx 27\ km$ resulting in a diameter $L_{source} = 2.7852 \cdot 10^{-13}\ pc$. For us the LHC itself is not moving relativistically ($\Gamma = 1$) and $Z = 1$ for protons.
+\begin{align*}
+\Rightarrow E_{max, obs} \lesssim 2.1446\ TeV
+\end{align*}
+The maximum energy reached in the LHC is $6.5\ TeV$ for one proton. This can be explained by an additional factor in the Hillas criterion taking into account the acceleration efficiency. For shock acceleration a factor $\frac{\beta_S}{0.2}$ is added. A similar factor will be necessary for the acceleration efficiency of the LHC. Using the maximum for shock acceleration (factor $5$) one gets
+\begin{align*}
+E_{max, obs} \lesssim 10.723\ TeV.
+\end{align*}
+
+\subsection*{Exercise 4}
+\paragraph{a)}
+For $T = 2.725\ K$ one gets for the integral $n_\gamma = 1.9334\cdot 10^14\ m^{-3}$. The integral is taken from 0 to $10^{18}$, since computational calculation above was not possible.
+
+\paragraph{b)}
+The mean free path is given by the inverse of the product of number density and cross section:
+\begin{align*}
+\lambda = \frac{1}{n_\gamma \sigma_T} = \frac{1}{1.2857 \cdot 10^{-14}}\ m = 7.7778 \cdot 10^{13}\ m = 3.2408 \cdot 10^{-3}\ pc
+\end{align*}
+
+\paragraph{c)}
+Since our galaxy is about $30\ kpc$ across, it seems very unlikely that the electrons could come extra-galactic sources, since their mean free path is way too short.
+\end{document}
